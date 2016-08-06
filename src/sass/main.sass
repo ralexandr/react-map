@@ -1,0 +1,75 @@
+$default-padding: 1em
+$border-main-color: #ddd
+
+body
+	position: relative
+
+.location-overlay
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	height: 100%
+	z-index: 1000
+	background-color: rgba(0, 0, 0, .7)
+.map-container
+	&.location-closed
+		.location-description
+			transform: translate(102%, 0)
+		.location-overlay
+			display: none
+
+.map-container, .map
+	position: relative
+	overflow: hidden
+	flex-grow: 1
+	max-width: 100%
+	min-height: 100%
+
+#map
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: -20px
+
+$map-location-description-padding-top: 2em
+$map-location-description-title-left-padding: $map-location-description-padding-top + $default-padding
+
+.location-description
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	background-color: #fff
+	width: calc(100% - 2px)
+	max-width: 400px
+	transform: translate(0, 0)
+	transition: all .5s ease-out
+	z-index: 1010
+	//padding-top: $map-location-description-padding-top
+	.title
+		font-size: 1.2em
+		border-bottom: 1px solid $border-main-color
+		margin-bottom: 1em
+		padding: .5em $map-location-description-title-left-padding $default-padding $default-padding
+	.close-button
+		position: absolute
+		width: $map-location-description-padding-top
+		height: $map-location-description-padding-top
+		right: 0
+		top: 0
+		cursor: pointer
+		font-size: 1.2em
+		background: url(img/icons/close-dark.svg) no-repeat center center
+		border: 1px solid #ddd
+	.header-img
+		width: 100%
+		max-height: 300px
+		height: 30%
+		background-size: cover
+		background-position: center center
+		margin-top: -$default-padding * 2
+	.content
+		padding: $default-padding

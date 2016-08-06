@@ -1,0 +1,29 @@
+{
+  "name": "react-map",
+  "version": "0.0.1",
+  "authors": [
+    "Alexander Radyushin <r.alex.andr@ya.ru>"
+  ],
+  "description": "React component for yandex/google maps",
+  "main": "index.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "react",
+    "googlemaps",
+    "yandexmaps",
+    "yandex",
+    "google",
+    "map"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ]
+}
