@@ -18,7 +18,9 @@ export default class Map extends Component {
 		this._handleWindowResize = this._handleWindowResize.bind(this);
 		this._closeLocationDescription = this._closeLocationDescription.bind(this);
 	}
-	componentDidMount() {}
+	componentDidMount() {
+
+	}
 	componentWillUnmount() {}
 
 	_handleWindowResize() {}
